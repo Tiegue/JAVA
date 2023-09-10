@@ -1,0 +1,50 @@
+project diagram design report by by Zhangtiec
+
+Product: "BTC" - A Simple Freehand Drawing Software especially for Kids, Designed for Mouse Use.
+
+Function Overview:
+1.Canvas featuring scalable X and Y axes, a center-cross line, and real-time display of mouse position.
+2.Resize the canvas by dragging its bottom-right corner.
+3.Introduce a user-friendly control bar on the left side of the window, housing a color selection panel with an adjustable color block for your preferred choice, accompanied by an indicator of the current color.
+4.Effortlessly sketch lines, triangles, rectangles, ovals, arcs, and any type of polygon.
+5.Grant flexibility to adjust the size and color of all shapes at will.
+6.Simplify deletion by dragging a shape out of the canvas.
+7.Utilize a slider to conveniently determine linewidths and angles for arc shapes.
+8.Instantly view drawing details as they appear in a real-time text area.
+9.Implement an automatic save feature, preserving your work in a personalized "shapes.BTC" file every 5 minutes only when changes occured within last 5 minutes.
+10.Seamlessly load your creations from the "shapes.BTC" file each time the software is launched.
+
+Design Approach:
+1.Five shape classes have been created to represent five types of shapes. These classes implement both the Shapes interface and the Serializable class in Java.
+2.A global perspective is crucial, such as designing global view variables. Multiple mouse events often use the same global variables.
+
+Key Technical Extensions:
+1.Utilizing file and object handling for loading and saving: FileInputStream, FileOutputStream, ObjectInputStream, ObjectOutputStream.
+2.Implementation of Timer and LocalDate for automatic saving every 5 minutes and tracking the saved file's timestamp.
+
+References:
+1.Book: "Core Java Volume I - Fundamentals."
+2.Insights from chatGpt, including searching for Windows quit event, Timer function, and grammar/spelling checks in English.
+3.Regarding Group Work: We collaboratively discussed the project's outline and essential details. Later, we coded individually and learned from one another.
+
+Acknowledgments:
+1.Immense gratitude to all staff, especially Ali and Kaorta, for their invaluable assistance.
+2.Special thanks to my group members, yuyu and morgan.
+
+Regrets:
+Although the rotation function was developed, there might be slight parameter errors. Hence, I temporarily removed it from the function. I plan to fine-tune the rotation function during my leisure time.
+
+Hope:
+I am hopeful that the "BTC" product will bring joy to my little son.
+
+Wishing everyone a wonderful holiday.
+
+
+
+
+
+
+
+
+
+
